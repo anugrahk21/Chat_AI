@@ -1,37 +1,5 @@
 from key import *
 import telebot
-import openai
-
-chatStr=''
-'''
-def chatResponse(prompt):
-    global chatStr
-    chatStr+=f"user: {prompt}\nEasyAIBuddy: "
-    openai.api_key=OPEN_AI_KEY
-    response=openai.completions.create(
-            model="gpt-3.5-turbo-instruct-0914",
-            prompt=chatStr,
-            temperature=1,
-            max_tokens=256,
-            top_p=1,
-            frequency_penalty=0,
-            presence_penalty=0
-    )
-    print(response)
-    print(response['choices'][0]['text'])
-    chatStr+=response['choices'][0]['text']
-    return chatStr
-'''
-"""
-Install the Google AI Python SDK
-
-$ pip install google-generativeai
-
-See the getting started guide for more information:
-https://ai.google.dev/gemini-api/docs/get-started/python
-"""
-from key import *
-import telebot
 import os
 
 import google.generativeai as genai
