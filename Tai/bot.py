@@ -1,10 +1,9 @@
 from key import *
 import telebot
-import os
 
 import google.generativeai as genai
 
-genai.configure(api_key=OPEN_AI_KEY)
+genai.configure(api_key=GEMINI_API_AI_KEY)
 
 # Create the model
 # See https://ai.google.dev/api/python/google/generativeai/GenerativeModel
@@ -40,15 +39,15 @@ chat_session = model.start_chat(history=[
 )
 predefined_responses = {
     "what is your name": "I am your Easy AI Buddy. I am here to help you... Feel free to ask anything.",
-    # Add more predefined Q&A pairs as needed
+    # we can add more predefined Q&A pairs as needed.
 }
 print(chat_session.history)
 
 
 bot=telebot.TeleBot(BOT_API)
-@bot.message_handler(['start'])
-def start(message):
-    bot.reply_to(message,"Hello, Welcome to EasyAIBuddy")
+@bot.message_handler(['start']) #message sent my user.
+def start(message): #what should be done if the user sent that message.
+    bot.reply_to(message,"Hello, Welcome to EasyAIBuddy") #reply of the message.
 
 @bot.message_handler(func=lambda message:True)
 def chatmessage(message):
@@ -66,4 +65,4 @@ def chatmessage(message):
         bot.reply_to(message,"Sorry, an error occurred. Please try again later.\nError: "+e)
 
 print("Bot Started")
-bot.infinity_polling()
+bot.infinity_polling() #starting of bot
