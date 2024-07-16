@@ -72,6 +72,6 @@ Run the script:
 
 ```sh
 python bot.py
-
+```
 
 This will start the Telegram bot. You should see Bot Started in your terminal, indicating that the bot is up and running.
