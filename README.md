@@ -41,21 +41,29 @@ EasyAIBuddy is a Telegram bot that leverages the capabilities of Google's genera
 ## Configuration
 
 1. **Set up your environment variables**:
-    - `OPEN_AI_KEY`: Your Google Generative AI API key.
+    - `GEMINI_API_AI_KEY`: Your Google Generative AI API key.
     - `BOT_API`: Your Telegram Bot API key.
 
     You can set these in your terminal session:
 
     ```sh
-    export OPEN_AI_KEY='your_open_ai_key'
-    export BOT_API='your_bot_api_key'
+    export GEMINI_API_AI_KEY='your_google_ai_key'
+    export BOT_API='your_telegram_bot_api_key'
     ```
 
     On Windows, use:
 
     ```sh
-    set OPEN_AI_KEY=your_open_ai_key
-    set BOT_API=your_bot_api_key
+    set GEMINI_API_AI_KEY=your_google_ai_key
+    set BOT_API=your_telegram_bot_api_key
+    ```
+
+2. **Create `key.py`**:
+    Ensure you have a `key.py` file in the same directory with the following content:
+
+    ```python
+    GEMINI_API_AI_KEY = 'your_google_ai_key'
+    BOT_API = 'your_telegram_bot_api_key'
     ```
 
 ## Running the Bot
