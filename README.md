@@ -158,7 +158,7 @@ bot.infinity_polling()
 - No module named 'telebot': Ensure that pyTelegramBotAPI is installed in your current environment.
 - Environment Variables Not Set: Make sure to set GEMINI_API_AI_KEY and BOT_API correctly in your terminal.
 # License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE file](LICENSE.md) for details.
 
 # Contributing
 Feel free to open issues or submit pull requests for any improvements or bug fixes.
