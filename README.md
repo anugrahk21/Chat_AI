@@ -1,6 +1,6 @@
 # EasyAIBuddy - AI Telegram Bot
 
-EasyAIBuddy is a Telegram bot that leverages the capabilities of Google's generative AI (Gemini-1.5-flash) to interact with users. It provides predefined responses to specific queries and can handle general questions using AI.
+EasyAIBuddy is a Telegram bot that leverages the capabilities of Google's generative AI (Gemini-1.5-flash) to interact with users. It provides predefined responses to specific queries and can handle general questions using Artificial Intelligence.
 
 ## Features
 
