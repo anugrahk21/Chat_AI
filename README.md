@@ -124,7 +124,3 @@ Pull requests and issues are welcome!
 - 🐙 **GitHub**: [anugrahk21](https://github.com/anugrahk21)
 - 💼 **LinkedIn**: [Anugrah K](https://linkedin.com/in/anugrah-k)
 - 📧 **Email**: [anugrah.k910@gmail.com](mailto:anugrah.k910@gmail.com)
-
----
-
-If you want the full markdown file or want the content tailored/shortened for specific sections, let me know!
